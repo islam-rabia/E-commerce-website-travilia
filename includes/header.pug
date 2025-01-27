@@ -1,0 +1,47 @@
+include ../includes/styles.pug
+
+  header(class="w-full top-0")
+    .header(class="flex justify-between items-center py-[25px] px-5 max-w-screen-2xl  mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+      a(href="index.html")
+        figure(class="max-w-[104px] lg:max-w-[109px]")
+          img(src="image/log.svg" alt="Logo image" class="w-full h-full")
+      .bars-navbar(class="bg-[#efefefc9] w-[30px] h-[30px] cursor-pointer flex justify-center items-center rounded-[7px] lg:hidden")
+        ion-icon(name="reorder-three-outline" class="text-[20px] text-[#626262]")
+      .ground-navbar(class="bg-[#000000b3] fixed top-0 w-full h-screen hidden z-[1]")
+      nav.navbar(class="bg-white h-screen max-w-60 w-full z-[2] fixed flex top-0 right-0 gap-5 flex-col p-1 lg:bg-inherit lg:p-0 lg:h-auto lg:static lg:max-w-none lg:w-auto lg:flex lg:flex-row lg:gap-[60px]")
+        .close-navbar(class="ml-auto bg-[#6247fa] text-white flex justify-center items-center rounded-lg w-6 h-6 cursor-pointer lg:hidden")
+          ion-icon(name="close-outline")
+        .title-nav(class="lg:hidden")
+          a(href="index.html")
+            figure(class="max-w-28 mx-auto my-2.5")
+              img(src="image/log.svg" alt="Logo image" class="w-full h-full")
+        - var myListNav = ["Home", "About", "Service", "Pricing" , "Contact"]
+        ul.navbar-list(class="mx-1 mb-auto flex flex-col gap-4 lg:flex-row lg:mx-0")
+          each val in myListNav
+            li(class="text-sm")
+              a(href="#")= val
+        .account-navbar
+          .cart-div 
+            a(href="cart.html")
+              button.icon-cart
+                ion-icon(name="cart-outline")
+            .countCart
+              span 0
+          .loved-div
+            .live
+            a(href="loved-product.html")
+              ion-icon(name="heart-outline")
+          .sign-out-div
+            ion-icon(name="log-out-outline")
+          .account-div
+            ion-icon(name="person-outline")
+            p Guest
+        .login-navbar(class="flex flex-row justify-center gap-4 mb-3 lg:mb-0")
+          .sign-div(class="flex items-center justify-center gap-1")
+            a(href="signUp.html")
+              ion-icon(name="person-outline" class="text-[#6247fa]")
+              button(class="sign-up text-black text-sm") Sign Up
+          .sign-div(class="flex items-center justify-center gap-1")
+            a(href="signIn.html")
+              ion-icon(name="person-outline" class="text-[#6247fa]")
+              button(class="sign-in text-black text-sm") Sign In

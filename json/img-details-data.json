@@ -1,0 +1,11 @@
+[
+  {
+    "userId": 1,
+    "detailsImg1": {
+      "img1": "../image/futuristic-city-architecture.jpg",
+      "img2": "../image/modern-luxury-villa-design.jpg",
+      "img3": "../image/luxury-architecture-exterior-design.jpg",
+      "img4": "../image/movie-night-by-pool-whole-family.jpg"
+    }
+  }
+]

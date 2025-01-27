@@ -1,0 +1,1 @@
+let elements=document.querySelectorAll(".count .num"),section=document.querySelector("#experience"),started=!1;function startCount(e){let t=Number(e.dataset.goal),n=0,o=setInterval(()=>{n++,(e.textContent=n)===t&&clearInterval(o)},1e3/t)}window.onscroll=()=>{window.scrollY>=section.offsetTop&&(started||elements.forEach(e=>startCount(e)),started=!0)};

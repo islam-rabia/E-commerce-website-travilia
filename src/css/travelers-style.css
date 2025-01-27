@@ -1,0 +1,250 @@
+#travelers {
+  margin-block: 80px;
+
+  .travelers-title {
+    > span {
+      font-size: 12px;
+      color: #6247fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      font-family: system-ui;
+      font-size: 21px;
+      color: #1e1a36;
+      font-weight: 500;
+    }
+  }
+
+  .travelers-image {
+    margin-top: 30px;
+
+    .travelers-list {
+      display: grid;
+      gap: 10px;
+
+      li {
+        margin-inline: auto;
+
+        .card-img-one {
+          display: flex;
+          gap: 10px;
+          padding-bottom: 10px;
+        }
+
+        img {
+          border-radius: 20px;
+        }
+
+        &:nth-child(1) {
+          .card-img-one {
+            img {
+              max-width: 150px;
+            }
+          }
+
+          .figure-img-three {
+            max-width: 310px;
+          }
+        }
+
+        &:nth-child(3) {
+          display: grid;
+          gap: 10px;
+
+          figure {
+            max-width: 310px;
+          }
+        }
+
+        .figure-img-four {
+          max-width: 310px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  #travelers {
+    .travelers-image {
+      .travelers-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 540px;
+        margin: auto;
+
+        li {
+          &:nth-child(1) {
+            .card-img-one {
+              img {
+                max-width: 98px;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              max-width: 170px;
+              height: 250px;
+            }
+          }
+
+          &:nth-child(3) {
+            img {
+              max-width: 143px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #travelers {
+    .travelers-image {
+      .travelers-list {
+        max-width: 648px;
+
+        li {
+          &:nth-child(1) {
+            .card-img-one {
+              img {
+                max-width: 120px;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              max-width: 202px;
+              height: 304px;
+            }
+          }
+
+          &:nth-child(3) {
+            img {
+              max-width: 174px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #travelers {
+    transform: translateY(111px);
+    margin-top: 109px;
+    margin-bottom: 209px;
+
+    .travelers-image {
+      .travelers-list {
+        max-width: 813px;
+
+        li {
+          &:nth-child(1) {
+            .card-img-one {
+              img {
+                max-width: 143px;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              max-width: 249px;
+              height: 359px;
+            }
+          }
+
+          &:nth-child(3) {
+            img {
+              max-width: 247px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #travelers {
+    .travelers-image {
+      .travelers-list {
+        max-width: 905px;
+
+        li {
+          &:nth-child(1) {
+            .card-img-one {
+              img {
+                max-width: 165px;
+              }
+            }
+
+            .figure-img-three {
+              max-width: 340px;
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              max-width: 268px;
+              height: 412px;
+            }
+          }
+
+          &:nth-child(3) {
+            img {
+              max-width: 278px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #travelers {
+    .travelers-image {
+      .travelers-list {
+        max-width: 1029px;
+
+        li {
+          &:nth-child(1) {
+            .card-img-one {
+              img {
+                max-width: 187px;
+              }
+            }
+
+            .figure-img-three {
+              max-width: 384px;
+            }
+          }
+
+          &:nth-child(2) {
+            img {
+              max-width: 310px;
+              height: 464px;
+            }
+          }
+
+          &:nth-child(3) {
+            img {
+              max-width: 311px;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+#destination {
+  margin-top: 80px;
+  gap: 50px;
+
+  .destination-title {
+    gap: 2px;
+
+    span {
+      font-size: 12px;
+      color: #6247fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      font-family: system-ui;
+      font-size: 21px;
+      color: #1e1a36;
+      font-weight: 500;
+    }
+  }
+
+  .products {
+    .products-list {
+      display: grid;
+      gap: 25px;
+
+      .product {
+        max-width: 280px;
+        gap: 12px;
+        position: relative;
+        margin: auto;
+        height: -webkit-fill-available;
+        padding-inline: 10px;
+
+        figure {
+          max-width: 260px;
+
+          img {
+            border-radius: 20px;
+          }
+        }
+
+        .product-title {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          h3 {
+            font-size: 17px;
+            font-weight: 600;
+            font-family: system-ui;
+            cursor: pointer;
+          }
+
+          p {
+            font-size: 13px;
+            font-family: system-ui;
+            color: #4f4d4d;
+          }
+
+          .description {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            .star {
+              background: #feec8d9e;
+              gap: 4px;
+              padding-inline: 5px;
+              border-radius: 30px;
+              padding-block: 1px;
+
+              ion-icon {
+                color: #f4cf1a;
+                font-size: 14px;
+              }
+
+              span {
+                font-size: 14px;
+                color: #4f4d4d;
+              }
+            }
+
+            .preview {
+              font-size: 13px;
+              color: #4f4d4d;
+            }
+          }
+        }
+
+        .price {
+          width: 49px;
+          height: 28px;
+          background-color: white;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          right: 18px;
+          top: 9px;
+
+          p {
+            color: #6247fa;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+          }
+        }
+
+        .favorite {
+          width: 25px;
+          height: 25px;
+          background-color: transparent;
+          color: black;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          ion-icon {
+            font-size: 16px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: 172px;
+    height: 40px;
+    background-color: #5b3ffa;
+    font-size: 15px;
+    border-radius: 34px;
+    cursor: pointer;
+    margin-inline: auto;
+    color: white;
+    font-size: 13px;
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.94);
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  #destination {
+    .products {
+      margin: auto;
+
+      .products-list {
+        grid-template-columns: 1fr 1fr;
+        max-width: 540px;
+        gap: 0;
+        row-gap: 25px;
+
+        .product {
+          max-width: unset;
+
+          .product-title {
+            h3 {
+              max-width: 212px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #destination {
+    .products {
+      .products-list {
+        grid-template-columns: 1fr 1fr;
+        max-width: 617px;
+
+        .product {
+          figure {
+            max-width: 290px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #destination {
+    margin-top: 109px;
+    transform: translateY(111px);
+
+    .products {
+      .products-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #destination {
+    .products {
+      .products-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}

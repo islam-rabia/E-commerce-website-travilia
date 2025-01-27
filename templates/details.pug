@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    include ../includes/styles.pug
+    title details
+  body
+    main#main-web
+      include ../includes/header.pug
+
+      section#details(class="flex items-center py-[25px] px-5 max-w-screen-2xl  mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .product-details
+          ul.product-list
+
+    include ../includes/footer.pug
+
+    button.btn-top(title="btn")
+      ion-icon(name="chevron-up-outline")
+
+    |
+    |
+    include ../includes/script-details.pug

@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    main#main-web
+      include ../includes/header.pug
+
+
+      section#shopping(class="flex items-center py-[25px] px-5 max-w-screen-2xl  mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .product-title
+          h1 Welcome Shopping Cart🛵
+        .product-details
+          .counter-products 
+            h3 My Cart (0)
+          .container-cart
+            .product-cart
+              ul(class="product-cart-list")
+            .slide-order
+              .order-card
+                .title
+                  h3 Order Summary
+                ul.total-list
+                  li.sub-total
+                    p SubTotal
+                    .shipping-div $
+                      span 0
+                  li.shipping
+                    p Shipping and Handling
+                    .shipping-div $
+                      span 60
+                  li.sales
+                    p Sales Tax
+                    .shipping-div $
+                      span 20
+                .total
+                  h3 Total
+                  .shipping-div $
+                    span 0
+                .checkBox
+                  h3 * Tax estimated at checkout
+                  .btn
+                    button(class="sign-in") Sign In &amp; Checkout
+                    button(class="guest") Guest Checkout
+    button.btn-top(title="btn")
+      ion-icon(name="chevron-up-outline")
+
+    include ../includes/footer.pug
+
+    |
+    |
+    include ../includes/script-cart.pug

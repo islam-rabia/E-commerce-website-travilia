@@ -1,0 +1,66 @@
+#prepare {
+  margin-block: 80px;
+
+  .prepare-content {
+    background-image: url("../../image/cta-bg.jpg");
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding-block: 40px;
+    padding-inline: 40px;
+
+    .prepare-title {
+      gap: 15px;
+
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: system-ui;
+        text-align: center;
+
+        img {
+          max-width: 20px;
+        }
+      }
+
+      p {
+        color: #4f4d4d;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      button {
+        width: 136px;
+        height: 38px;
+        background-color: #5b3ffa;
+        border-radius: 33px;
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+        transition: transform 0.2s ease;
+
+        &:active {
+          transform: scale(0.94);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #prepare {
+    .prepare-content {
+      padding-block: 65px;
+
+      .prepare-title {
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

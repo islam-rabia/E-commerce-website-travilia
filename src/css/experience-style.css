@@ -1,0 +1,253 @@
+#experience {
+  margin-top: 80px;
+  gap: 75px;
+
+  .experience-img {
+    position: relative;
+    max-width: 300px;
+    margin-inline: auto;
+
+    figure {
+      max-width: 300px;
+      margin-inline: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .image-exp {
+      position: absolute;
+      max-width: 110px;
+      bottom: 0;
+    }
+  }
+
+  .experience-title {
+    > span {
+      font-size: 12px;
+      color: #6247fa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+      font-family: system-ui;
+      font-size: 21px;
+      color: #1e1a36;
+      font-weight: 500;
+    }
+
+    > p {
+      font-size: 15px;
+      margin-block: 12px;
+    }
+
+    .counter {
+      margin-top: 20px;
+
+      .counter-list {
+        gap: 10px;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .count {
+            font-size: 24px;
+            color: #6247fa;
+            font-weight: 500;
+          }
+
+          span {
+            font-size: 24px;
+            color: #6247fa;
+            /* position: relative; */
+            /* 
+            &::after {
+              content: "+";
+              position: absolute;
+            } */
+
+            b {
+              font-weight: 400;
+            }
+          }
+
+          p {
+            font-size: 14px;
+            text-align: center;
+            max-width: 158px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  #experience {
+    .experience-title {
+      .counter {
+        .counter-list {
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 425px) {
+  #experience {
+    .experience-title {
+      > p {
+        max-width: 425px;
+      }
+
+      .counter {
+        .counter-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 10px;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #experience {
+    flex-direction: row !important;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    .experience-img {
+      margin-inline: unset;
+
+      .image-exp {
+        max-width: 84px;
+      }
+    }
+
+    .experience-title {
+      h3 {
+        max-width: 303px;
+      }
+
+      .counter {
+        margin-inline: unset;
+
+        .counter-list {
+          max-width: 367px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #experience {
+    transform: translateY(111px);
+    margin-top: 109px;
+
+    .experience-img {
+      max-width: unset;
+
+      figure {
+        max-width: 334px;
+      }
+
+      .image-exp {
+        max-width: 109px;
+      }
+    }
+
+    .experience-title {
+      h3 {
+        font-size: 23px;
+      }
+
+      .counter {
+        .counter-list {
+          li {
+            span {
+              font-size: 27px;
+              font-weight: 500;
+
+              b {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #experience {
+    .experience-img {
+      max-width: unset;
+
+      figure {
+        max-width: 360px;
+      }
+
+      .image-exp {
+        max-width: 115px;
+      }
+    }
+
+    .experience-title {
+      max-width: 464px;
+      gap: 10px;
+
+      h3 {
+        font-size: 25px;
+        max-width: 387px;
+      }
+
+      > p {
+        max-width: 475px;
+      }
+
+      .counter {
+        .counter-list {
+          gap: 29px;
+          max-width: 402px;
+
+          li {
+            span {
+              font-size: 29px;
+              font-weight: 500;
+
+              b {
+                font-weight: 500;
+              }
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #experience {
+    .experience-title {
+      max-width: 507px;
+
+      > p {
+        max-width: 524px;
+      }
+    }
+  }
+}

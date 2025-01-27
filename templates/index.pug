@@ -1,0 +1,112 @@
+include ../includes/mixins.pug
+
+doctype html 
+html(lang="en")
+  head 
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    include ../includes/styles.pug
+    title Travelia
+  body
+    main#main-web
+      include ../includes/header.pug
+
+      section#home(class="px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .home-title
+          .title-div
+            .expo-div(class="flex justify-center items-center")
+              p Explore The World
+              img(src="image/title-icon.svg" alt="title image")
+            h1 It's a Big World Out There,Go Explore
+            p We alway's make our customer happy by providing as many choices as possible
+          .prog-home(class="flex gap-3 items-center")
+            button(class="text-white") Learn a Trip &gt;
+            .figure-play
+              figure
+                img(src="image/bootom.jpg" alt="bottom image")
+              .play(class="flex justify-center items-center")
+                ion-icon(name="play")
+              button Watch Our Story
+        .image-home
+          figure
+            img(src="image/ban.png" alt="home image" class="w-full h-full")
+
+      section#service(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .service-title(class="flex flex-col justify-center items-center")
+          span WHAT WE SERVE
+          h3 Top Values For You
+          p Try a Variety of benefits When Using Our Services
+        .service-list
+          +handleData
+
+      section#destination(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .destination-title(class="flex flex-col justify-center items-center")
+          span TOP DESTINATION
+          h3 Explore Top Destination
+        .products
+          ul.products-list
+        button(class="flex items-center justify-center") View all Destination
+
+      section#experience(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .experience-img
+          figure
+            img(src="image/experience-banner.png" alt="experience image")
+          img(src="image/exp-shape.svg" alt="experience image" class="image-exp")
+        .experience-title(class="flex flex-col")
+          span OUR EXPERIENCE
+          h3 With Our Experience We Will Serve You
+          p Since we first opened we have always prioritized the convenience of our users by providing low prices and with a easy process
+          .counter
+            ul.counter-list(class="flex justify-center items-center")
+              li
+                .count +
+                  span(class="num" data-goal=20) 0
+                p Year Experience
+              li
+                .count +
+                  span(class="num" data-goal=460) 0
+                p Collaboration
+              li
+                .count +
+                  span(class="num" data-goal=50) 0
+                  | k
+                p Happy Customer
+
+      section#travelers(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .travelers-title(class="flex flex-col justify-center items-center")
+          span GALLERY
+          h3 photo's From Travelers
+        .travelers-image 
+          ul.travelers-list
+            li 
+              .card-img-one 
+                figure.figure-img-one 
+                  img(src="image/gallery-1.jpg" alt="image")
+                figure.figure-img-two 
+                  img(src="image/about2.jpg" alt="image")
+              figure.figure-img-three 
+                img(src="image/about5.jpg" alt="image")
+            li 
+              figure.figure-img-four 
+                img(src="image/about4.jpg" alt="image")
+            li 
+              figure.figure-img-five 
+                img(src="image/about3.jpg" alt="image")
+              figure.figure-img-six 
+                img(src="image/about6.jpg" alt="image")
+
+      section#prepare(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .prepare-content 
+          .prepare-title(class="flex flex-col justify-center items-center")
+            h1 Prepare Yourself &amp; Let's Explore The Beauty Of World
+              img(src="image/service-icon-1.svg" alt="service icon")
+            p We have many especially offers especially for you
+            button(class="btn" title="Get Started") Get Started
+
+      include ../includes/footer.pug
+
+    button.btn-top
+      ion-icon(name="chevron-up-outline")
+  |
+  |
+  include ../includes/scripts.pug

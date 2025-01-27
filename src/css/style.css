@@ -1,0 +1,95 @@
+body {
+  background-image: url("../../image/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow-x: hidden;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #f54c2ff0;
+  }
+
+  .btn-top {
+    background: #f54c2ff0;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transform: translateY(40px);
+    opacity: 0;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+
+    ion-icon {
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      background-color: #00000030;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      transform: translateX(-31px);
+      transition-duration: 0.4s;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(0px);
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    header {
+      .navbar {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+.account-navbar {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.account-div {
+  display: flex;
+  font-size: 14px;
+  gap: 3px;
+  align-items: center;
+  margin-left: 10px;
+
+  ion-icon {
+    color: #646464;
+  }
+}

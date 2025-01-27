@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    include ../includes/styles.pug
+    title Sign Up
+  body
+    main#main-web
+      include ../includes/header-account.pug
+
+      main.main-two
+        .login-div
+          .container
+            .formsInt
+              form(action="" class="formTwo")
+                .sign
+                  h1 Sign Up
+                  .User
+                    .first
+                      label User Name
+                      .clon1
+                        input(type="text" placeholder="Write first name" name="firstName")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                    .last
+                      label Last User
+                      .clon1
+                        input(type="text" placeholder="Write last name" name="lastName")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                  .Insert
+                    .Email
+                      label Email
+                      .clon1
+                        input(type="email" placeholder="Write your email" name="email")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                  .pass-account
+                    .password
+                      label password
+                      .divPass
+                        input(type="password" placeholder="Enter your password" name="password")
+                        .icons
+                          ion-icon(name="eye-off-outline" class="eyeOff md hydrated" role="img")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                    .Crossword
+                      label Confirm password
+                      .divPass
+                        input(type="password" placeholder="Enter your password" name="Crossword")
+                        .icons
+                          ion-icon(name="eye-off-outline" class="eyeOff md hydrated" role="img")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                  .form-text
+                    p You do not have an account? 
+                      a(href="signIn.html") Sign In
+                  .btn-form
+                    input(type="submit" value="Sign Up" class="sub")
+
+  |
+  |
+  include ../includes/script-account.pug

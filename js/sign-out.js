@@ -1,0 +1,1 @@
+function signOut(){document.querySelector(".sign-out-div").addEventListener("click",()=>{setTimeout(()=>{location.href="signUp.html",localStorage.clear()},1500)})}export{signOut};

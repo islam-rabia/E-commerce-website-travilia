@@ -1,0 +1,9 @@
+mixin handleData
+  - const lists = [{ title: "Lot of Choices", para: "Total 460+ destinations that we work with.", img: "image/service-icon-1.svg"},{ title: "Best Tour Guide", para: "Our tour guide with 15+ years of experience.", img: "image/service-icon-2.svg" },{ title: "Easy Booking", para: "With on easy and fast ticket purchase process.", img: "image/service-icon-3.svg" }];
+  ul(class="flex flex-col")
+    each val in lists
+      li(class="flex flex-col")
+        figure
+          img(src=val.img alt="image service")
+        h4= val.title
+        p= val.para

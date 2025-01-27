@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    include ../includes/styles.pug
+    title Sign Up
+  body
+    main#main-web
+      include ../includes/header-account.pug
+
+      main.main-two
+        .login-div
+          .container
+            .formsInt
+              form(action="" class="formTwo")
+                .sign
+                  h1 Sign In
+                  .Insert
+                    .Email
+                      label Email
+                      .clon1
+                        input(type="email" placeholder="Write your email" name="email")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                  .pass-account
+                    .password
+                      label password
+                      .divPass
+                        input(type="password" placeholder="Enter your password" name="password")
+                        .icons
+                          ion-icon(name="eye-off-outline" class="eyeOff md hydrated" role="img")
+                        .text
+                          div
+                            ion-icon(name="information-circle-outline" class="error md hydrated" role="img")
+                            ion-icon(name="checkmark-circle-outline" class="true md hydrated" role="img")
+                            p
+                  .form-text
+                    p You do not have an account? 
+                      a(href="signUp.html") Sign Up
+                    span You forgot your password
+                  .btn-form
+                    input(type="submit" value="Sign In" class="sub")
+
+  |
+  |
+  include ../includes/script-account-sign.pug

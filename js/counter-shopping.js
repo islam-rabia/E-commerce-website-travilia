@@ -1,0 +1,1 @@
+function counterShopping(){var t=document.querySelector(".cart-div .countCart span"),e=JSON.parse(localStorage.getItem("dataCart"))||[];t.innerHTML=e.length}export{counterShopping};

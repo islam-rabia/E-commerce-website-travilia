@@ -1,0 +1,1 @@
+import{changeText}from"./change-text.js";import{counterShopping}from"./counter-shopping.js";import{handleDataShopping}from"./handle-shopping.js";function removeDataInLocalStorage(o,t){o.splice(t,1),handleDataShopping(o),localStorage.setItem("dataCart",JSON.stringify(o)),changeText(),counterShopping()}export{removeDataInLocalStorage};

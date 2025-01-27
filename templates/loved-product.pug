@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    main#main-web
+      include ../includes/header.pug
+
+      section#loved(class="flex items-center py-[25px] px-5 max-w-screen-2xl  mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+        .product-title
+          h1 Welcome Favorite Products ❤️
+        .product-details
+          .counter-products 
+            h3 My Loved (0)
+          .container-loved
+            .product-loved
+              ul(class="product-cart-list")
+
+      button.btn-top(title="btn")
+        ion-icon(name="chevron-up-outline")
+
+    include ../includes/footer.pug
+
+    |
+    |
+    include ../includes/script-loved-product.pug

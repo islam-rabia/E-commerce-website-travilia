@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Enjoy the Beauty of the del pincio",
+    "img": "image/destination-1.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 500,
+    "city": "Rome, Italy",
+    "star": 4.7,
+    "preview": "11.1K",
+    "quantity": 1
+  },
+  {
+    "id": 2,
+    "title": "Enjoy the Beauty of the pakistan monument",
+    "img": "image/destination-2.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 1200,
+    "city": "Islamabad, Pakistan",
+    "star": 4.4,
+    "preview": "16.9K",
+    "quantity": 1
+  },
+  {
+    "id": 3,
+    "title": "Enjoy the Beauty of the Burj Khalifa",
+    "img": "image/destination-3.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 670,
+    "city": "Skysroper in Dubai",
+    "star": 4.5,
+    "preview": "120K",
+    "quantity": 1
+  },
+  {
+    "id": 4,
+    "title": "Enjoy the Beauty of the Miladhoo",
+    "img": "image/destination-4.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 340,
+    "city": "Island in the Maldives",
+    "star": 4.7,
+    "preview": "70",
+    "quantity": 1
+  },
+  {
+    "id": 5,
+    "title": "Enjoy the Beauty of the Ko Too",
+    "img": "image/destination-5.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 440,
+    "city": "Island the Gulf of thailand",
+    "star": 4.5,
+    "preview": "968",
+    "quantity": 1
+  },
+  {
+    "id": 6,
+    "title": "Enjoy the Beauty of the Grand Mecidlye Mosque",
+    "img": "image/destination-6.jpg",
+    "description": "Escape to the epitome of luxury with this stunning [style, e.g., Mediterranean-inspired] villa, nestled in the heart of [location]. Offering a perfect blend of modern elegance and timeless charm, this property redefines comfort and sophistication.",
+    "price": 5700,
+    "city": "Mosque in Istanbul Turklye",
+    "star": 4.6,
+    "preview": "95.5K",
+    "quantity": 1
+  }
+]

@@ -1,0 +1,1 @@
+let wishList=JSON.parse(localStorage.getItem("lovedProduct"))||[];function saveLovedInLocalStorage(t,o){wishList.some(e=>e===t[o])||(wishList.push(t[o]),localStorage.setItem("lovedProduct",JSON.stringify(wishList)))}export{saveLovedInLocalStorage};

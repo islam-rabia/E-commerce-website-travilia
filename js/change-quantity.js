@@ -1,0 +1,1 @@
+function changeQuantity(a){var t=JSON.parse(localStorage.getItem("dataCart")).find(t=>t.id===a);t&&(document.querySelector(".product-details input").value=t.quantity)}export{changeQuantity};

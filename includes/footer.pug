@@ -1,0 +1,48 @@
+include ../includes/styles.pug
+
+  footer(class="flex flex-col px-5 max-w-screen-2xl mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+    .footer-top 
+      .footer-content
+        a(href="index.html" title="Home Page")
+          figure(class="max-w-[104px] lg:max-w-[109px]")
+            img(class="w-full h-full" src="image/log.svg" alt="Logo image")
+        p We alway's make our customer happy by providing as many choices as possible.
+        .icons-media 
+          a(href="#" name="facebook" title="facebook") 
+            ion-icon(name="logo-facebook")
+          a(href="#" name="youtube" title="youtube") 
+            ion-icon(name="logo-youtube")
+          a(href="#" name="instagram" title="instagram") 
+            ion-icon(name="logo-instagram")
+      .footer-lists
+        .footer-list-one 
+          h3 About
+          - let listsOne = ["About Us", "Features", "News", "Menu"]
+          ul.lists
+            - for(var list of listsOne)
+              li=list
+        .footer-list-two 
+          h3 Company
+          - let listsTwo = ["Why Company", "Partner With Us", "FAQ", "Blog"]
+          ul.lists
+            - for(var list of listsTwo)
+              li=list
+        .footer-list-three 
+          h3 Support
+          - let listsThree = ["Account", "Support Center", "FeedBack", "Contact Us", "Accessibility"]
+          ul.lists
+            - for(var list of listsThree)
+              li=list
+        .footer-list-four 
+          h3 Get in Touch
+          .lists-title 
+            p Question of feedback? we'd love to hear from you.
+            form(action="")
+              input(type="email" name="email" placeholder="Email Address")
+              input(type="submit" value="Send")
+    .footer-bottom
+      p CopyRight Code With 
+        span Islam Rabia
+      ul.footer-list-bottom 
+        li Terms and condition
+        li Privacy and Policy

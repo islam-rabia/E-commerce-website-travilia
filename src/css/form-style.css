@@ -1,0 +1,359 @@
+.main-two {
+  margin-top: 100px;
+
+  .login-div {
+    .container {
+      .formsInt {
+        .formTwo {
+          width: 100%;
+          max-width: 282px;
+          margin-inline: auto;
+          background-color: white;
+          border-radius: 7px;
+
+          .sign {
+            transition-duration: 0.4s;
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding-block: 12px;
+            padding-inline: 12px;
+            border-radius: 6px;
+
+            h1 {
+              margin: auto;
+              font-size: 20px;
+              font-family: system-ui;
+              font-weight: 500;
+              color: #f54c2ff0;
+              margin-top: 6px;
+              margin-bottom: 6px;
+            }
+          }
+
+          .User {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+
+            .first,
+            .last {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              label {
+                font-size: 14px;
+                font-family: system-ui;
+                color: #5c5c5c;
+              }
+
+              .clon1 {
+                position: relative;
+
+                input {
+                  width: 126px;
+                  border: hidden;
+                  background-color: transparent;
+                  border: 1px solid #d9d9d9;
+                  padding-block: 5px;
+                  padding-inline: 7px;
+                  border-radius: 6px;
+                  color: #3f3f3f;
+                  font-size: 14px;
+
+                  &.true {
+                    border: 1px solid #38ad3c;
+                  }
+
+                  &.false {
+                    border: 1px solid #f44336;
+                  }
+
+                  &::placeholder {
+                    color: #8a8a8a;
+                    font-size: 13px;
+                  }
+
+                  &:focus {
+                    outline: none;
+                  }
+                }
+
+                .text {
+                  display: none;
+
+                  div {
+                    display: flex;
+                    gap: 3px;
+                    align-items: center;
+                    margin-top: 2px;
+                  }
+
+                  &.active {
+                    display: block;
+                  }
+
+                  .error {
+                    color: #f44336;
+                    display: none;
+
+                    &.false {
+                      display: block;
+                    }
+                  }
+
+                  .true {
+                    display: none;
+                    color: #38ad3c;
+
+                    &.correct {
+                      display: block;
+                    }
+                  }
+
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+
+          .Insert {
+            display: flex;
+            gap: 5px;
+
+            .Email {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+
+              label {
+                font-size: 14px;
+                font-family: system-ui;
+                color: #5c5c5c;
+              }
+
+              .clon1 {
+                position: relative;
+
+                input {
+                  border: hidden;
+                  background-color: transparent;
+                  border: 1px solid #d9d9d9;
+                  padding-block: 5px;
+                  padding-inline: 7px;
+                  border-radius: 6px;
+                  color: #3f3f3f;
+                  width: 100%;
+                  font-size: 14px;
+
+                  &.true {
+                    border: 1px solid #38ad3c;
+                  }
+
+                  &.false {
+                    border: 1px solid #f44336;
+                  }
+
+                  &::placeholder {
+                    color: #8a8a8a;
+                    font-size: 13px;
+                  }
+
+                  &:focus {
+                    outline: none;
+                  }
+                }
+
+                .text {
+                  display: none;
+
+                  div {
+                    display: flex;
+                    gap: 3px;
+                    align-items: center;
+                    margin-top: 2px;
+                  }
+
+                  &.active {
+                    display: block;
+                  }
+
+                  .error {
+                    color: #f44336;
+                    display: none;
+
+                    &.false {
+                      display: block;
+                    }
+                  }
+
+                  .true {
+                    display: none;
+                    color: #38ad3c;
+
+                    &.correct {
+                      display: block;
+                    }
+                  }
+
+                  p {
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+
+          .pass-account {
+            gap: 11px;
+            display: grid;
+          }
+
+          .password,
+          .Crossword {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            label {
+              font-size: 14px;
+              font-family: system-ui;
+              color: #5c5c5c;
+            }
+
+            .divPass {
+              position: relative;
+              display: flex;
+              justify-content: end;
+              flex-direction: column;
+
+              input {
+                width: 100%;
+                border: hidden;
+                background-color: transparent;
+                border: 1px solid #d9d9d9;
+                padding-block: 5px;
+                padding-inline: 7px;
+                border-radius: 6px;
+                color: #3f3f3f;
+                font-size: 14px;
+
+                &.true {
+                  border: 1px solid #38ad3c;
+                }
+
+                &.false {
+                  border: 1px solid #f44336;
+                }
+
+                &::placeholder {
+                  color: #8a8a8a;
+                  font-size: 13px;
+                }
+
+                &:focus {
+                  outline: none;
+                }
+              }
+
+              .icons {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                display: flex;
+                justify-content: end;
+                padding-inline: 5px;
+                flex-direction: row-reverse;
+                gap: 5px;
+                color: #979797;
+                max-width: 55px;
+                cursor: pointer;
+              }
+            }
+
+            .text {
+              display: none;
+
+              div {
+                display: flex;
+                gap: 3px;
+                align-items: center;
+                margin-top: 2px;
+              }
+
+              &.active {
+                display: block;
+              }
+
+              .error {
+                color: #f44336;
+                display: none;
+
+                &.false {
+                  display: block;
+                }
+              }
+
+              .true {
+                display: none;
+                color: #38ad3c;
+
+                &.correct {
+                  display: block;
+                }
+              }
+
+              p {
+                font-size: 13px;
+              }
+            }
+          }
+
+          .form-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+
+            p,
+            span {
+              font-size: 13px;
+              font-family: system-ui;
+              color: black;
+
+              a {
+                color: #f54c2ff0;
+              }
+            }
+          }
+
+          .btn-form {
+            input {
+              border: hidden;
+              background-color: transparent;
+              background-color: #f54c2ff0;
+              color: white;
+              padding-block: 7px;
+              border-radius: 6px;
+              transition: transform 0.2s ease;
+              cursor: pointer;
+              width: 100%;
+              font-size: 14px;
+              transition: transform 0.2s ease;
+
+              &:active {
+                transform: scale(0.95);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

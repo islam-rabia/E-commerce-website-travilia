@@ -1,0 +1,1 @@
+let wishList=JSON.parse(localStorage.getItem("dataCart"))||[];function SaveDetailsInLocalStorage(t,a){t=t.find(t=>t.id===a);if(t){let i=wishList.find(t=>t.id===a);i?wishList=wishList.map(t=>t.id===i.id?{...t,quantity:t.quantity+1}:t):wishList.push({...t,quantity:1}),localStorage.setItem("dataCart",JSON.stringify(wishList))}}export{SaveDetailsInLocalStorage};

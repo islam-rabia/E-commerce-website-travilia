@@ -1,0 +1,16 @@
+include ../includes/styles.pug
+
+  header(class="w-full top-0")
+    .header(class="flex justify-between items-center py-[25px] px-5 max-w-screen-2xl  mx-auto M:px-[15px] L:px-[40px] sm:px-[50px] md:px-[60px] lg:px-[80px] xl:px-[100px] 2xl:px-[150px]")
+      a(href="index.html")
+        figure(class="max-w-[104px] lg:max-w-[109px]")
+          img(src="image/log.svg" alt="Logo image" class="w-full h-full")
+      .login-navbar(class="flex flex-row justify-center gap-4 mb-3 lg:mb-0")
+        .sign-div(class="flex items-center justify-center gap-1")
+          a(href="signUp.html")
+            ion-icon(name="person-outline" class="text-[#6247fa]")
+            button(class="sign-up text-black text-sm") Sign Up
+        .sign-div(class="flex items-center justify-center gap-1")
+          a(href="signIn.html")
+            ion-icon(name="person-outline" class="text-[#6247fa]")
+            button(class="sign-in text-black text-sm") Sign In

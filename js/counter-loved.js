@@ -1,0 +1,1 @@
+function counterProducts(){var e=document.querySelector(".counter-products h3"),o=JSON.parse(localStorage.getItem("lovedProduct"))||[];e.innerHTML=`My Loved (${o.length})`}export{counterProducts};
