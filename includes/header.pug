@@ -21,18 +21,19 @@ include ../includes/styles.pug
             li(class="text-sm")
               a(href="#")= val
         .account-navbar
-          .cart-div 
-            a(href="cart.html")
-              button.icon-cart
-                ion-icon(name="cart-outline")
-            .countCart
-              span 0
-          .loved-div
-            .live
-            a(href="loved-product.html")
-              ion-icon(name="heart-outline")
-          .sign-out-div
-            ion-icon(name="log-out-outline")
+          .detail-nav
+            .cart-div 
+              a(href="cart.html")
+                button.icon-cart
+                  ion-icon(name="cart-outline")
+              .countCart
+                span 0
+            .loved-div
+              .live
+              a(href="loved-product.html")
+                ion-icon(name="heart-outline")
+            .sign-out-div
+              ion-icon(name="log-out-outline")
           .account-div
             ion-icon(name="person-outline")
             p Guest
